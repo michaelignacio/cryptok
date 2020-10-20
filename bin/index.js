@@ -20,7 +20,7 @@ axios.get(url, { headers: { Accept: "application/json" } })
  .then(res => {
 	price = res.data[coin].usd;
 
-	const greeting = chalk.white.bold(price);
+	const greeting = chalk.white.bold(`The price of ${coin} is`, price, `!`);
 
 	const boxenOptions = {
 	 padding: 1,
